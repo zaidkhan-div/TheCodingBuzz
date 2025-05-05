@@ -32,7 +32,9 @@ const Home = () => {
                 <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
             </Container>
             <ContactForm />
-            <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
+            <Container>
+                <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
+            </Container>
             <Footer />
         </div>
 

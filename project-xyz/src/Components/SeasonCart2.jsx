@@ -12,21 +12,21 @@ const SeasonCart = () => {
                 <div className='flex flex-col md:flex-row justify-between items-center'>
                     <div className="flex flex-col items-center w-[280.23px] ">
                         <div className="w-full max-w-[460.32px]">
-                            <img src={season1} alt="" />
+                            <img src={season1} alt="season" />
                         </div>
                         <h3 className='text-title text-black text-center font-bold mb-3'>Cranberries</h3>
                         <p className='text-descSize text-center'>Lorem ipsum dolor sit amet <br /> consectetur.</p>
                     </div>
                     <div className="flex flex-col items-center w-[280.23px] ">
                         <div className="w-full max-w-[460.32px]">
-                            <img src={season3} alt="" />
+                            <img src={season3} alt="Cranberries" />
                         </div>
                         <h3 className='text-title text-black text-center  font-bold mb-3'>Brussel Sprouts</h3>
                         <p className='text-descSize text-center'>Lorem ipsum dolor sit amet <br /> consectetur.</p>
                     </div>
                     <div className="flex flex-col items-center w-[280.23px] ">
                         <div className="w-full max-w-[460.32px]">
-                            <img src={season2} alt="" />
+                            <img src={season2} alt="Brussel" />
                         </div>
                         <h3 className='text-title text-black text-center font-bold mb-3'>Sweet Potatoes</h3>
                         <p className='text-descSize text-center'>Lorem ipsum dolor sit amet <br /> consectetur.</p>
