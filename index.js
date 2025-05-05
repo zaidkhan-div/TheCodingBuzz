@@ -7,12 +7,10 @@ const app = express();
 const port = 3000;
 app.use(express.json());
 app.use(cors({
-    allowedHeaders: '*',
-    methods: ['POST',],
-    origin: '*',
-    preflightContinue: true
+    origin: 'http://localhost:5173',
+    methods: ['POST'],
+    allowedHeaders: ['Content-Type'],
 }));
-
 
 
 const transporter = nodemailer.createTransport({
