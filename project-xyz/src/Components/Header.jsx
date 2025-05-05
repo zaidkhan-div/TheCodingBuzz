@@ -11,7 +11,7 @@ const Header = () => {
                 <div className="lg:hidden">
                     <button><FaHamburger size='30px' color='#005A2F' /></button>
                 </div>
-                <div className="hidden lg:flex gap-5 uppercase text-lg font-bold">
+                <div className="hidden w-[356px] lg:flex gap-5 uppercase text-lg font-bold">
                     <span>home</span>
                     <span>Our feature</span>
                     <span>contact us</span>
