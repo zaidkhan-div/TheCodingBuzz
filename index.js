@@ -47,10 +47,9 @@ app.post('/sendmail', async (req, res) => {
     });
 });
 
-
-// app.get('/',(req,res)=>{
-//     res.send('Checking if it is working')
-// })
+app.get('/', (req, res) => {
+    res.send('This Checking')
+})
 
 app.listen(port, () => {
     console.log('Server is Running on port ', port);
