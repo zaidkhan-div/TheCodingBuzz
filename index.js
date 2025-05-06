@@ -1,7 +1,7 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
-import fs from 'fs'
+import { emailHtml } from './templates.js';
 
 const app = express();
 const port = 3000;
@@ -24,20 +24,25 @@ const transporter = nodemailer.createTransport({
 app.post('/sendmail', async (req, res) => {
     const { company, user_name, phone, email, message, customer_type } = req.body;
 
-    const htmlTemplate = `
-        <p>Company: ${company}</p>
-        <p>Name: ${user_name}</p>
-        <p>Phone: ${phone}</p>
-        <p>Email: ${email}</p>
-        <p>Message: ${message}</p>
-        <p>Customer Type: ${customer_type}</p>
-    `;
+    // const htmlTemplate = `
+    //     <p>Company: ${company}</p>
+    //     <p>Name: ${user_name}</p>
+    //     <p>Phone: ${phone}</p>
+    //     <p>Email: ${email}</p>
+    //     <p>Message: ${message}</p>
+    //     <p>Customer Type: ${customer_type}</p>
+    // `;
 
     const mailOptions = {
         from: email,
         to: 'salmankarim.khan42@gmail.com',
         subject: 'New Contact Form Submission',
-        html: htmlTemplate,
+        html: emailHtml.replace('{{company}}', company)
+            .replace('{{user_name}}', user_name)
+            .replace('{{phone}}', phone)
+            .replace('{{email}}', email)
+            .replace('{{message}}', message)
+            .replace('{{customer_type}}', customer_type)
     };
 
     try {
