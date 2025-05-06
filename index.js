@@ -5,13 +5,13 @@ import fs from 'fs'
 
 const app = express();
 const port = 3000;
-app.use(express.json());
 app.use(cors({
     allowedHeaders: '*',
-    methods: ['POST',],
+    methods: '*',
     origin: '*',
     preflightContinue: true
 }));
+app.use(express.json());
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -23,7 +23,6 @@ const transporter = nodemailer.createTransport({
 
 app.post('/sendmail', async (req, res) => {
     const { company, user_name, phone, email, message, customer_type } = req.body;
-
 
     const htmlTemplate = `
         <p>Company: ${company}</p>
@@ -41,12 +40,12 @@ app.post('/sendmail', async (req, res) => {
         html: htmlTemplate,
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return res.status(500).send('Error sending email');
-        }
+    try {
+        await transporter.sendMail(mailOptions);
         res.status(200).send('Email sent successfully');
-    });
+    } catch (error) {
+        res.status(500).send('Error sending email');
+    }
 });
 
 app.get('/', (req, res) => {
