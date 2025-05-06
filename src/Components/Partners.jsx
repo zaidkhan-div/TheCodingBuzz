@@ -12,7 +12,7 @@ const Partners = () => {
     return (
         <div className='my-[50px]'>
             <h2 className='uppercase text-center font-black text-title mb-10'>our partner</h2>
-            <div className="flex flex-col flex-wrap justify-center items-center gap-12 md:flex-row">
+            <div className="flex flex-col flex-wrap justify-center items-center gap-12 sx:flex-row small:flex-row md:flex-row">
                 <div className="w-[100px] h-[100px] rounded-full overflow-hidden ">
                     <img className='w-full h-full object-cover' src={Partner1} alt="parnters" />
                 </div>
