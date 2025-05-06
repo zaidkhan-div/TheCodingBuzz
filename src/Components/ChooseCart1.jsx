@@ -4,7 +4,7 @@ import Divider from './Divider';
 
 const ChooseCart = () => {
     return (
-        <div className='mt-[80px] mb-[100px] '>
+        <div id='chooseUs' className='mt-[80px] mb-[100px] '>
             <h2 className='text-title text-center text-black mb-[50px] font-black uppercase Montserrat '>why choose us?</h2>
             <div className='flex flex-col md:flex-row justify-between items-center'>
                 <div className="flex flex-col items-center w-[280px] h-[244px] ">

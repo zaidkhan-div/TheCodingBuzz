@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FormImg from '../assets/form.png';
+import { ToastContainer, toast } from 'react-toastify';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -11,6 +12,8 @@ const ContactForm = () => {
         message: ''
     });
 
+    const API_URL = import.meta.env.VITE_API_URL;
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({
@@ -21,8 +24,10 @@ const ContactForm = () => {
 
     const sendEmail = async (e) => {
         e.preventDefault();
+        setFormData({ company: '', user_name: '', phone: '', email: '', message: '', customer_type: '' });
 
-        const response = await fetch('http://localhost:3000/sendmail', {
+
+        const response = await fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -31,14 +36,14 @@ const ContactForm = () => {
         });
 
         if (response.ok) {
-            alert('Email sent successfully!');
+            toast.success('Email sent successfully!');
         } else {
-            alert('Error sending email');
+            toast.error('Error sending email');
         }
     };
 
     return (
-        <div className='mt-[80px] mb-5 bg-center bg-cover p-2' style={{ backgroundImage: `url(${FormImg})` }}>
+        <div id='contact' className='mt-[80px] mb-5 bg-center bg-cover p-2' style={{ backgroundImage: `url(${FormImg})` }}>
             <div className="w-full min-w-[50%] mx-auto space-y-3 pt-5">
                 <h2 className='text-title text-black font-black text-center'>Big Valley Produce, 202-544-7707 Washington DC</h2>
                 <p className='text-descsize text-center text-desc'>Please place your order here or send us an email. We're produce wholesalers in Washington DC, We can deliver to your business. You can count on us.</p>
@@ -54,6 +59,7 @@ const ContactForm = () => {
                                 name="customer_type"
                                 value="Existing Customer"
                                 type="radio"
+                                checked = {formData.customer_type === 'Existing Customer'}
                                 className="accent-green-700 w-[30px] h-[30px]"
                                 onChange={handleChange}
                             />
@@ -65,6 +71,7 @@ const ContactForm = () => {
                                 id="new"
                                 name="customer_type"
                                 value="new customer"
+                                checked = {formData.customer_type === 'new customer'}
                                 type="radio"
                                 className="accent-green-700 w-[30px] h-[30px]"
                                 onChange={handleChange}
@@ -77,6 +84,7 @@ const ContactForm = () => {
                                 id="email"
                                 name="customer_type"
                                 value="email"
+                                checked = {formData.customer_type === 'email'}
                                 type="radio"
                                 className="accent-green-700 w-[30px] h-[30px]"
                                 onChange={handleChange}
@@ -112,6 +120,7 @@ const ContactForm = () => {
                     <button className='btn w-full rounded-full bg-[#005A2F] text-white text-title h-[50px]'>Submit</button>
                 </div>
             </form>
+            <ToastContainer />
         </div>
     );
 };
