@@ -13,13 +13,13 @@ const Footer = () => {
         <span>Contact</span>
       </div>
       <div className="text-descsize flex flex-col items-center lg:items-start gap-5 uppercase text-white">
-        <h2 className='text-descsize lg:text-title'>XYZ company</h2>
-        <span className='text-sm lg:text-descsize'>Home</span>
-        <span className='text-sm lg:text-descsize'>Our Features</span>
-        <span className='text-sm lg:text-descsize'>Contact</span>
+        <h2 className='text-descsize lg:text-title'>Big Valley PRODUCE</h2>
+        <span className='text-sm lg:text-descsize'>Address: Washington DC,</span>
+        <span className='text-sm lg:text-descsize'>Phone #: 0123-1234-5678</span>
+        <span className='text-sm lg:text-descsize'>Email: info@xyz.com</span>
       </div>
       <div className="text-sm gap-5 flex flex-col  items-center text-white">
-        <h2 className='text-descsize lg:text-title'>@2025-XYZ COMPANY</h2>
+        <h2 className='text-descsize lg:text-title'>@2025-Big Valley PRODUCE</h2>
         <div className="flex items-center justify-center md:flex-row gap-14">
           <span><FaFacebook size='24px' /></span>
           <span><FaInstagram size='24px' /></span>

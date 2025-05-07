@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <>
             <div className='w-full bg-[#005A2F] text-white text-center uppercase p-5 rounded-b-[40px] Montserrat text-sm lg:text-title'>
-                Did YOU KNOW xyz offers HOME DELIVERY?
+                Did you know big valley produce offers HOME DELIVERY ?
             </div>
 
             {/* Mobile Menu Overlay */}
