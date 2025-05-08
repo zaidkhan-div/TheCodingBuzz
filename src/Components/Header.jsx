@@ -43,7 +43,7 @@ const Header = () => {
                     <span><a href="#contact">contact us</a></span>
                 </div>
                 <div className="text-3xl lg:text-5xl font-bold text-[#005A2F] font-lilita uppercase">
-                    L<span className='text-secondary'>o</span>g <span className='text-secondary'>o</span>
+                    L<span className='text-secondary'>o</span>g<span className='text-secondary'>o</span>
                 </div>
                 <div className='hidden md:flex justify-between items-center gap-5'>
                     <button className='w-40 h-10 lg:w-64 lg:h-12 text-white uppercase rounded-full bg-[#86AF35] text-sm lg:text-title'>
