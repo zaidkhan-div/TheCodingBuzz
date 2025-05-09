@@ -2,6 +2,8 @@ import React from 'react'
 import Container from './Container'
 import Header from './Header'
 import HeroSection from './HeroSection'
+import Divider from './Divider'
+import ChooseCart from './ChooseCart'
 
 const Home = () => {
     return (
@@ -9,6 +11,7 @@ const Home = () => {
             <Header />
             <HeroSection />
             <Container>
+                <ChooseCart/>
             </Container>
         </div>
     )
