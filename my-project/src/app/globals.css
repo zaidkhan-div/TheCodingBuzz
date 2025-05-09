@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #005A2F;
+  --color-secondary: #86AF35;
+  --color-tertiary: #E1D6C2;
+  --color-desc: #505050;
+
+  --font-lilita: 'Lilita One', cursive;
+  --font-lily-script: 'Lily Script One', cursive;
+
+  --font-title-size: 24px;
+  --font-desc-size: 18px;
+}
