@@ -4,6 +4,7 @@ import Header from './Header'
 import HeroSection from './HeroSection'
 import Divider from './Divider'
 import ChooseCart from './ChooseCart'
+import Footer from './Footer'
 
 const Home = () => {
     return (
@@ -11,8 +12,10 @@ const Home = () => {
             <Header />
             <HeroSection />
             <Container>
-                <ChooseCart/>
+                <ChooseCart />
+                <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
             </Container>
+            <Footer/>
         </div>
     )
 }
