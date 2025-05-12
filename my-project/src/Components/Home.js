@@ -4,6 +4,7 @@ import Header from './Header'
 import HeroSection from './HeroSection'
 import Divider from './Divider'
 import ChooseCart from './ChooseCart'
+import Season from './Season'
 import Footer from './Footer'
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <Container>
                 <ChooseCart />
                 <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
+                <Season/>
             </Container>
             <Footer/>
         </div>
