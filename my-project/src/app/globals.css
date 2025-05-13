@@ -12,3 +12,12 @@
   --font-title-size: 24px;
   --font-desc-size: 18px;
 }
+
+@screen-sizes {
+  sx: 425px;
+  small: 450px;
+  mid: 768px;
+  lg: 992px;
+  form: 1800px;
+  3xl: 1920px;
+}

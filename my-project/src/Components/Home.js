@@ -6,6 +6,8 @@ import Divider from './Divider'
 import ChooseCart from './ChooseCart'
 import Season from './Season'
 import Footer from './Footer'
+import Family from './Family'
+import MidSection from './MidSection'
 
 const Home = () => {
     return (
@@ -15,9 +17,13 @@ const Home = () => {
             <Container>
                 <ChooseCart />
                 <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
-                <Season/>
+                <Season />
+                <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
+                <Family />
+                <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
             </Container>
-            <Footer/>
+            <MidSection />
+            <Footer />
         </div>
     )
 }
