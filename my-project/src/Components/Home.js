@@ -8,6 +8,8 @@ import Season from './Season'
 import Footer from './Footer'
 import Family from './Family'
 import MidSection from './MidSection'
+import Partners from './Partners'
+import ContactForm from './ContactForm'
 
 const Home = () => {
     return (
@@ -23,6 +25,12 @@ const Home = () => {
                 <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
             </Container>
             <MidSection />
+            <Container>
+                <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
+                <Partners />
+                <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
+            </Container>
+            <ContactForm/>
             <Footer />
         </div>
     )
