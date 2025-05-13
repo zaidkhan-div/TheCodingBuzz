@@ -11,9 +11,9 @@ const ChooseCart = () => (
             Enjoy nature's best, just when it's meant to be.
         </p>
         <div className='flex flex-col md:flex-row justify-between items-center gap-8 mb-20'>
-            <Carts img={season1} title='Cranberries' para='Bold, tangy, and bursting with freshness' />
-            <Carts img={season3} title='Brussel Sprouts' para='Crisp, green, and packed with goodness' />
-            <Carts img={season2} title='Sweet Potatoes' para='Earthy, sweet, and rich in flavor' />
+            <Carts img={season1} width={460} height={490} title='Cranberries' para='Bold, tangy, and bursting with freshness' />
+            <Carts img={season3} width={460} height={490} title='Brussel Sprouts' para='Crisp, green, and packed with goodness' />
+            <Carts img={season2} width={460} height={490} title='Sweet Potatoes' para='Earthy, sweet, and rich in flavor' />
         </div>
     </div>
 );

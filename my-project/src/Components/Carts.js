@@ -1,25 +1,25 @@
 import React from "react";
 import Image from "next/image";
 
-const Carts = ({ img, Icon, title, para, width = 280, height = 244 }) => {
+const Carts = ({ img, Icon, title, para, width = 460, height = 490 }) => {
   return (
     <div
       className="flex flex-col items-center"
       style={{
         width: `${width}px`,
         minHeight: `${height}px`
-      }}
-    >
+      }}>
       {Icon ? (
         <span className="w-[100px] h-[100px] p-5 rounded-full bg-[#F2F2F2] mx-auto">
           <Icon className="text-6xl" />
         </span>
       ) : img && (
-        <div className="relative w-full" style={{ height: `${height - 100}px` }}>
+        <div className="relative w-full" style={{ maxHeight: `${height}px`, maxWidth: `${width}px` }}>
           <Image
             src={img}
             alt={title || "Product"}
             fill
+            sizes="(max-width: 768px) 100vw, 460px"
             className="object-contain"
           />
         </div>
