@@ -68,8 +68,8 @@ const ContactForm = () => {
             </div>
 
             <div className="w-full min-w-[50%] mx-auto space-y-3 pt-5 relative z-10">
-                <h2 className='text-title text-black font-black text-center'>Big Valley Produce, 202-544-7707 Washington DC</h2>
-                <p className='text-descsize text-center text-desc'>Please place your order here or send us an email. We're produce wholesalers in Washington DC, We can deliver to your business. You can count on us.</p>
+                <h2 className='text-2xl text-black font-black text-center'>Big Valley Produce, 202-544-7707 Washington DC</h2>
+                <p className='text-lg text-center text-desc'>Please place your order here or send us an email. We're produce wholesalers in Washington DC, We can deliver to your business. You can count on us.</p>
             </div>
 
             <form onSubmit={sendEmail} className='mt-[80px] w-full max-w-[1140px] p-5 mx-auto relative z-10 rounded-lg'>
