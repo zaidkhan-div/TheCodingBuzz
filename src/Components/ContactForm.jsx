@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FormImg from '../assets/form.png';
+import FormImg from '../assets/form.webp';
 import { ToastContainer, toast } from 'react-toastify';
 
 const ContactForm = () => {

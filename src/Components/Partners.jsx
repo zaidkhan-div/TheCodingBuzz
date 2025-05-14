@@ -1,14 +1,16 @@
 import React from 'react'
-import Partner1 from '../assets/partner1.png'
-import Partner2 from '../assets/partner2.png'
-import Partner3 from '../assets/partner3.png'
-import Partner4 from '../assets/partner4.png'
-import Partner5 from '../assets/partner5.png'
-import Partner6 from '../assets/partner6.png'
-import Partner7 from '../assets/partner7.png'
-import Partner8 from '../assets/partner8.png'
+import Partner1 from '../assets/partner1.webp'
+import Partner2 from '../assets/partner2.webp'
+import Partner3 from '../assets/partner3.webp'
+import Partner4 from '../assets/partner4.webp'
+import Partner5 from '../assets/partner5.webp'
+import Partner6 from '../assets/partner6.webp'
+import Partner7 from '../assets/partner7.webp'
+import Partner8 from '../assets/partner8.webp'
 
 const Partners = () => {
+
+
     return (
         <div className='my-[50px]'>
             <h2 className='uppercase text-center font-black text-title mb-10'>our partner</h2>

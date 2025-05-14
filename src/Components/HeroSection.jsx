@@ -1,17 +1,26 @@
-import React from 'react'
-import Heroimg1 from '../assets/Hero.png'
-import Heroimg2 from '../assets/hero2.png'
+import React from 'react';
+import Heroimg1 from '../../src/assets/Hero.webp';
 
 const HeroSection = () => {
     return (
-        <div id='home' className='w-full max-w-[1372px] mx-auto px-4'>
-            <div className="bg-cover bg-center h-[587.56px] flex flex-col items-center justify-center text-6xl lg:text-[64px] font-bold text-white text-center font-mono mt-5" style={{ backgroundImage: `url(${Heroimg2})`, backgroundImage: `url(${Heroimg1})` }}>
+        <div id='home' className='w-full max-w-[1372px] mx-auto mt-2 px-4 relative h-[587.56px]'>
+            <img
+                src={Heroimg1}
+                alt="Hero"
+                width="1372"
+                height="587"
+                className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+                loading="eager"
+                fetchpriority="high"
+            />
+            <div className="flex flex-col items-center justify-center h-full text-6xl lg:text-[64px] font-bold text-white text-center font-mono">
                 <h1><span className='font-lilyScript'>Welcome to </span><br /><span className='font-lilita'>Big Valley PRODUCE</span></h1>
                 <button className='btn uppercase rounded-full bg-[#86AF35] w-52 lg:w-[352px] h-[60px] 
                  text-title text-white lg:text-title'><a href="#contact">contact us</a></button>
             </div>
         </div>
-    )
-}
 
-export default HeroSection
+    );
+};
+
+export default HeroSection;

@@ -1,6 +1,6 @@
 import React from 'react'
-import midimg from '../assets/midImg.png'
-import QuotesImg from '../assets/quotes.png'
+import midimg from '../assets/midImg.webp'
+import QuotesImg from '../assets/quotes.webp'
 
 const MidSection = () => {
     return (

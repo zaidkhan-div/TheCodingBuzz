@@ -1,5 +1,5 @@
 import React from 'react'
-import Footerimg from '../assets/footer.png'
+import Footerimg from '../assets/footer.webp'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 
