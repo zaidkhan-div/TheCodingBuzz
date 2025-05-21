@@ -8,9 +8,9 @@ import Divider from '../Components/Divider'
 import FamilyCart3 from '../Components/FamilyCart3'
 import MidSection from '../Components/MidSection'
 import Partners from '../Components/Partners'
-import Footer from '../Components/Footer'
 
 const ContactForm = lazy(() => import('../Components/ContactForm'));
+const Footer = lazy(() => import('../Components/Footer'))
 
 const Home = () => {
     return (
@@ -38,7 +38,9 @@ const Home = () => {
             <Container>
                 <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
             </Container>
-            <Footer />
+            <Suspense fallback={<div>Loading Footer..</div>}>
+                <Footer />
+            </Suspense>
         </div>
 
     )

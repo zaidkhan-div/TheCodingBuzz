@@ -12,21 +12,21 @@ const SeasonCart = () => {
                 <div className='flex flex-col md:flex-row justify-between items-center'>
                     <div className="flex flex-col items-center w-[280.23px] ">
                         <div className="w-full max-w-[460.32px]">
-                            <img src={season1} fetchpriority='low' alt="season" />
+                            <img src={season1} fetchpriority='low' alt="season" loading="lazy" />
                         </div>
                         <h3 className='text-title text-black text-center font-bold mb-3'>Cranberries</h3>
                         <p className='text-descSize text-center'>Bold, tangy, and bursting with freshness — a perfect seasonal delight.</p>
                     </div>
                     <div className="flex flex-col items-center w-[280.23px] ">
                         <div className="w-full max-w-[460.32px]">
-                            <img src={season3} fetchpriority='low' alt="Cranberries" />
+                            <img src={season3} fetchpriority='low' alt="Cranberries" loading="lazy" />
                         </div>
                         <h3 className='text-title text-black text-center  font-bold mb-3'>Brussel Sprouts</h3>
                         <p className='text-descSize text-center'>Crisp, green, and packed with goodness straight from the farm.</p>
                     </div>
                     <div className="flex flex-col items-center w-[280.23px] ">
                         <div className="w-full max-w-[460.32px]">
-                            <img src={season2} fetchpriority='low' alt="Brussel" />
+                            <img src={season2} fetchpriority='low' alt="Brussel" loading="lazy" />
                         </div>
                         <h3 className='text-title text-black text-center font-bold mb-3'>Sweet Potatoes</h3>
                         <p className='text-descSize text-center'>Earthy, sweet, and rich in flavor — a comforting seasonal favorite.</p>
