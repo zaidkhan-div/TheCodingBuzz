@@ -6,7 +6,7 @@ const HeroSection = () => {
         <div id='home' className='w-full max-w-[1372px] mx-auto mt-2 px-4 relative h-[587.56px]'>
             <img
                 src={Heroimg1}
-                alt="Hero"
+                alt="HeroImage"
                 width="1372"
                 height="587"
                 className="absolute top-0 left-0 w-full h-full object-cover -z-10"

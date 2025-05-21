@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import Header from '../Components/Header'
 import HeroSection from '../Components/HeroSection'
 import Container from '../Components/Container'
@@ -8,8 +8,9 @@ import Divider from '../Components/Divider'
 import FamilyCart3 from '../Components/FamilyCart3'
 import MidSection from '../Components/MidSection'
 import Partners from '../Components/Partners'
-import ContactForm from '../Components/ContactForm'
 import Footer from '../Components/Footer'
+
+const ContactForm = lazy(() => import('../Components/ContactForm'));
 
 const Home = () => {
     return (
@@ -31,7 +32,9 @@ const Home = () => {
                 <Partners />
                 <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
             </Container>
-            <ContactForm />
+            <Suspense fallback={<div>Loading Contact Form...</div>}>
+                <ContactForm />
+            </Suspense>
             <Container>
                 <Divider width='1240px' height='1px' color='#505050' opacity='0.2' />
             </Container>
