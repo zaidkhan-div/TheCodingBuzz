@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
-  }
-  
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: white;
+  --text: black;
+}

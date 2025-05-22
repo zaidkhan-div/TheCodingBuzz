@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import logo from '../assets/Logo_Quality.png'
 import { FaSearch, FaCartArrowDown, FaHamburger, FaTimes } from 'react-icons/fa'
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
             {/* Mobile Menu */}
             <div className={`fixed top-0 left-0 h-full w-64 bg-white z-50 shadow-lg transform transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} lg:hidden`}>
                 <div className="p-4 flex justify-end">
-                    <button onClick={() => setIsMenuOpen(false)}>
+                    <button onClick={() => setIsMenuOpen(false)} aria-label='Button'>
                         <FaTimes size='30px' color='#005A2F' />
                     </button>
                 </div>
@@ -32,7 +33,7 @@ const Header = () => {
             </div>
 
             <div className="w-full max-w-[1340px] mx-auto px-5 flex justify-between items-center mt-5">
-                <div className="lg:hidden w-40">
+                <div className="lg:hidden">
                     <button onClick={() => setIsMenuOpen(true)}>
                         <FaHamburger size='30px' color='#005A2F' />
                     </button>
@@ -42,8 +43,9 @@ const Header = () => {
                     <span><a href="#chooseUs">Our feature</a></span>
                     <span><a href="#contact">contact us</a></span>
                 </div>
-                <div className="text-3xl lg:text-5xl font-bold text-[#005A2F] font-lilita uppercase">
-                    L<span className='text-secondary'>o</span>g<span className='text-secondary'>o</span>
+                <div className="text-3xl lg:text-5xl font-bold text-[#005A2F] font-lilita uppercase w-[123px]">
+                    {/* L<span className='text-secondary'>o</span>g<span className='text-secondary'>o</span> */}
+                    <img src={logo} fetchPriority='low' loading='lazy' alt="Logo_Image" />
                 </div>
                 <div className='hidden md:flex justify-between items-center gap-5'>
                     <button className='w-40 h-10 lg:w-64 lg:h-12 text-white uppercase rounded-full bg-[#86AF35] text-sm lg:text-title'>

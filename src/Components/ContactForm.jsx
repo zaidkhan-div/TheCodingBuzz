@@ -45,7 +45,7 @@ const ContactForm = () => {
     return (
         <div id='contact' className='mt-[80px] mb-5 bg-center bg-cover p-2' style={{ backgroundImage: `url(${FormImg})` }}>
             <div className="w-full min-w-[50%] mx-auto space-y-3 pt-5">
-                <h2 className='text-title text-black font-black text-center'>Big Valley Produce, 202-544-7707 Washington DC</h2>
+                <h2 className='text-title text-black font-black text-center'>Big Valley Produce, 202-544-7500 Washington DC</h2>
                 <p className='text-descsize text-center text-desc'>Please place your order here or send us an email. We're produce wholesalers in Washington DC, We can deliver to your business. You can count on us.</p>
             </div>
 
