@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../assets/Logo_Quality.png'
-import { FaSearch, FaCartArrowDown, FaHamburger, FaTimes } from 'react-icons/fa'
+import { FaSearch, FaCartArrowDown, FaHamburger, FaTimes, } from 'react-icons/fa'
+import { TiThMenu } from 'react-icons/ti'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -35,7 +36,7 @@ const Header = () => {
             <div className="w-full max-w-[1340px] mx-auto px-5 flex justify-between items-center mt-5">
                 <div className="lg:hidden">
                     <button onClick={() => setIsMenuOpen(true)}>
-                        <FaHamburger size='30px' color='#005A2F' />
+                        <TiThMenu size='35px' color='#005A2F' />
                     </button>
                 </div>
                 <div className="hidden w-[356px] lg:flex gap-5 uppercase text-lg font-bold">
@@ -43,7 +44,7 @@ const Header = () => {
                     <span><a href="#chooseUs">Our feature</a></span>
                     <span><a href="#contact">contact us</a></span>
                 </div>
-                <div className="text-3xl lg:text-5xl font-bold text-[#005A2F] font-lilita uppercase w-[123px]">
+                <div className="text-3xl lg:text-5xl font-bold text-[#005A2F] font-lilita uppercase w-[100px]">
                     {/* L<span className='text-secondary'>o</span>g<span className='text-secondary'>o</span> */}
                     <img src={logo} fetchPriority='low' loading='lazy' alt="Logo_Image" />
                 </div>
